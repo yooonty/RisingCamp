@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품검색</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="header_topwrap">
+            <div id="header_delivery">
+                <a href="#">
+                    <img src="https://res.kurly.com/pc/service/common/2011/delivery_210801.png" alt="배송안내">
+                </a>
+            </div>
+            <div id="header_topmenu">
+                <div class="top_menu side">
+                    <a href="#" class="top_menu1">회원가입</a>
+                </div>
+                <div class="top_menu side">
+                    <a href="#">로그인</a>
+                </div>
+                <div class="top_menu">
+                    <a href="#">고객센터</a>
+                </div>
+                <img src="https://res.kurly.com/pc/ico/1908/ico_down_16x10.png" alt="고객센터">
+            </div>
+        </div>
+        <div id="header_logowrap">
+            <a href="#">
+                <img src="	https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="kurly_logo">
+            </a>
+        </div>
+    </div>
+    <div id="nav_bar">
+        <div id="nav_barwrap">
+            <div id="menu1">
+                <input type="image" src="https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off_x2.png" alt="">
+                <div>
+                    전체 카테고리
+                </div>
+            </div>
+            <div id="menu2">
+                <a href="#">신상품</a>
+            </div>
+            <div id="menu3">
+                <a href="#">베스트</a>
+            </div>
+            <div id="menu4">
+                <a href="#">알뜰쇼핑</a>
+            </div>
+            <div id="menu5">
+                <a href="#">특가/혜택</a>
+            </div>
+            <div id="menu6">
+                <input type="text" placeholder="검색어를 입력해주세요." class="search_text">
+                <input type="image" src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png" alt="ico_search"
+                    class="search_icon">
+            </div>
+            <div id="location">
+                <input type="image" src="https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1"
+                    alt="ico_location" class="location_icon">
+            </div>
+            <div id="like">
+                <a href="#">
+                    <input type="image" src="https://res.kurly.com/pc/service/pick/btn-heart-off.svg" alt="ico_like"
+                        class="like_icon">
+                </a>
+            </div>
+            <div id="basket">
+                <a href="#">
+                    <input type="image" src="https://res.kurly.com/pc/service/common/2011/ico_cart.svg" alt="ico_basket"
+                        class="basket_icon">
+                </a>
+            </div>
+        </div>
+        <img src="	https://res.kurly.com/pc/service/common/1902/bg_1x9.png" alt="" class="nav_bar_gradation">
+    </div>
+    <div id="search">
+        <div id="search_wrap">
+            <div class="search_title">
+                상품검색
+            </div>
+            <div class="search_box">
+                <div class="search_condition">
+                    검색조건
+                </div>
+                <div class="search_helper">
+                    <input type="text" id="search_bar">
+                    <input type="submit" id="search_button" value="검색하기">
+                </div>
+            </div>
+            <div class="sort_menu">
+                <div class="item_sum">
+                    총 151개
+                </div>
+                <div class="sort_type">
+                    <ul>
+                        <li class="sort_recommend">
+                            <a href="#">추천순</a>
+                            <img src="https://res.kurly.com/kurly/ico/2021/question_24_24_cccc.svg?ver=2" alt="">
+                        </li>
+                        <li><a href="#" class="gray_">신상품순</a></li>
+                        <li><a href="#" class="gray_">판매량순</a></li>
+                        <li><a href="#" class="gray_">혜택순</a></li>
+                        <li><a href="#" class="gray_">낮은 가격순</a></li>
+                        <li><a href="#" class="gray_">높은 가격순</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="item_img">
+                        <a href="#">
+                            <img src="https://img-cf.kurly.com/shop/data/goods/1637922740528l0.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_title">
+                            <a href="#">
+                                GAP 부사 사과 한봉지 5~6입
+                            </a>
+                        </div>
+                        <div class="item_cost">
+                            <div class="sale_">
+                                <div class="sale_percent">
+                                    10%
+                                </div>
+                                <div class="sale_price">
+                                    6,291원
+                                </div>
+                            </div>
+                            <div class="original_price">
+                                6,990원
+                            </div>
+                        </div>
+                        <div class="item_sub">
+                            부담없이 즐기는 작은 햇사과 (1봉/5~6입/900g내외)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item_page">
+                <a href="#">
+                    <img src="https://res.kurly.com/pc/etc/old/images/common/icon-pagination-first.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="	https://res.kurly.com/pc/etc/old/images/common/icon-pagination-prev.png" alt="">
+                </a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">
+                    <img src="	https://res.kurly.com/pc/etc/old/images/common/icon-pagination-next.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="https://res.kurly.com/pc/etc/old/images/common/icon-pagination-last.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_wrap">
+            <div id="footer_left">
+                <div class="call_center">
+                    고객행복센터
+                </div>
+                <div class="call_number_wrap">
+                    <div class="call_number">
+                        1644-1107
+                    </div>
+                    <div class="call_info_wrap">
+                        <div class="call_info1">
+                            365고객센터
+                        </div>
+                        <div class="call_info2">
+                            오전 7시 - 오후 7시
+                        </div>
+                    </div>
+                </div>
+                <div class="kakao_wrap">
+                    <div class="kakao">
+                        <a href="#">
+                            카카오톡 문의
+                        </a>
+                    </div>
+                    <div class="call_info_wrap">
+                        <div class="call_info1">
+                            365고객센터
+                        </div>
+                        <div class="call_info2">
+                            오전 7시 - 오후 7시
+                        </div>
+                    </div>
+                </div>
+                <div class="qna_wrap">
+                    <div class="qna">
+                        <a href="#">
+                            1:1 문의
+                        </a>
+                    </div>
+                    <div class="call_info_wrap">
+                        <div class="call_info1">
+                            24시간 접수 가능
+                        </div>
+                        <div class="call_info2">
+                            고객센터 운영시간에 순차적으로 답변해드리겠습니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="bulk_order_wrap">
+                    <div class="bulk_order">
+                        <a href="#">
+                            대량주문 문의
+                        </a>
+                    </div>
+                    <div class="call_info2 info_align">
+                        비회원의 경우 메일로 문의 바랍니다.
+                    </div>
+                </div>
+            </div>
+            <div id="footer_right">
+                <div class="link_wrap">
+                    <div class="list">
+                        <a href="#">컬리소개</a>
+                    </div>
+                    <div class="list">
+                        <a href="#">컬리소개영상</a>
+                    </div>
+                    <div class="list">
+                        <a href="#">인재채용</a>
+                    </div>
+                    <div class="list">
+                        <a href="#">이용약관</a>
+                    </div>
+                    <div class="list list_bold">
+                        <a href="#">개인정보처리방침</a>
+                    </div>
+                    <div class="list">
+                        <a href="#">이용안내</a>
+                    </div>
+                </div>
+                <div class="company">
+                    법인명 (상호) : 주식회사 컬리 
+                    <span class="bar">I</span>
+                    사업자등록번호 : 261-81-23567
+                    <a href="#">사업자정보 확인</a>
+                    <br>
+                    통신판매업 : 제 2018-서울강남-01646 호
+                    <span class="bar">I</span>
+                    개인정보보호책임자 : 이원준
+                    <br>
+                    주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
+                    <span class="bar">I</span>
+                    대표이사 : 김슬아
+                    <br>
+                    입점문의 : 
+                    <a href="#">입점문의하기</a>
+                    <span class="bar">I</span>
+                    마케팅제휴 : 
+                    <a href="#">business@kurlycorp.com</a>
+                    <br>
+                    채용문의 : 
+                    <a href="#">recruit@kurlycorp.com</a>
+                    <br>
+                    팩스: 070 - 7500 - 6098
+                    <span class="bar">I</span>
+                    이메일 : 
+                    <a href="#">help@kurlycorp.com</a>
+                    <br>
+                    대량주문 문의 : 
+                    <a href="#">kurlygift@kurlycorp.com</a>
+                </div>
+                <div class="sns_wrap">
+                    <div class="sns">
+                        <a href="#">
+                            <img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sns">
+                        <a href="#">
+                            <img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sns">
+                        <a href="#">
+                            <img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sns">
+                        <a href="#">
+                            <img src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sns">
+                        <a href="#">
+                            <img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer_link_wrap">
+            <div class="footer_link_1">
+                <a href="#">
+                    <img src="https://res.kurly.com/pc/ico/2001/logo_isms.png" alt="">
+                </a>
+                <div class="link_info">
+                    <a href="#">
+                        [인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영
+                        <br>
+                        [유효기간] 2019.04.01 ~ 2022.03.31
+                    </a>
+                </div>
+            </div>
+            <div class="footer_link_1">
+                <a href="#">
+                    <img src="https://res.kurly.com/pc/ico/2001/logo_eprivacyplus.png" alt="">
+                </a>
+                <div class="link_info">
+                    <a href="#">
+                        개인정보보호 우수 웹사이트 ·
+                        <br>
+                        개인정보처리시스템 인증 (ePRIVACY PLUS)
+                    </a>   
+                </div>
+            </div>
+            <div class="footer_link_2">
+                <a href="#">
+                    <img src="https://res.kurly.com/pc/service/main/2009/logo_payments.png" alt="">
+                </a>
+                <div class="link_info">
+                    <a href="#">
+                        고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한
+                        <br>
+                        토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <div id="footer_bottom_wrap">
+                <div class="footer_bottom_txt1">
+                    마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
+                </div>
+                <div class="footer_bottom_txt1">
+                    마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
+                </div>
+                <div class="footer_bottom_txt2">
+                    © KURLY CORP. ALL RIGHTS RESERVED
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
