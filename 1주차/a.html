@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function toggle(id) {
+            let check = "https://res.kurly.com/pc/service/common/2006/ico_checkbox.svg";
+            let checked = "https://res.kurly.com/pc/service/common/2006/ico_checkbox_checked.svg";
+            let img=document.getElementById(id).src
+            if (id == "check_1") {
+                if (img == check) {
+                    document.getElementById(id).src = checked;
+                    document.getElementById("check_2").src = checked;
+                    document.getElementById("check_3").src = checked;
+                    document.getElementById("check_4").src = checked;
+                    document.getElementById("check_5").src = checked;
+
+                } else {
+                    document.getElementById(id).src = check;
+                    document.getElementById("check_2").src = check;
+                    document.getElementById("check_3").src = check;
+                    document.getElementById("check_4").src = check;
+                    document.getElementById("check_5").src = check;
+                }
+            }
+            else {
+                if (img == check) {
+                    document.getElementById(id).src = checked;
+                } else {
+                    document.getElementById(id).src = check;
+                    document.getElementById('check_1').src = check;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="image" id="check_1" src="https://res.kurly.com/pc/service/common/2006/ico_checkbox.svg" onclick="toggle('check_1');">
+    <input type="image" id="check_2" src="https://res.kurly.com/pc/service/common/2006/ico_checkbox.svg" onclick="toggle('check_2');">
+    <input type="image" id="check_3" src="https://res.kurly.com/pc/service/common/2006/ico_checkbox.svg" onclick="toggle('check_3');">
+    <input type="image" id="check_4" src="https://res.kurly.com/pc/service/common/2006/ico_checkbox.svg" onclick="toggle('check_4');">
+    <input type="image" id="check_5" src="https://res.kurly.com/pc/service/common/2006/ico_checkbox.svg" onclick="toggle('check_5');">
+</body>
+</html>

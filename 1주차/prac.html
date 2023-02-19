@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <style>
+        /* 임시 삽입: 확인용 */
+        .swiper {
+            width: 100%;
+            height: 370px;
+        }
+        #img {
+            width: 100%;
+            height: 370px;
+            margin-bottom: 40px;
+            background-image: url("https://img-cf.kurly.com/banner/main/pc/img/ab2389bf-5bef-4886-b1f8-8696ddd309b3");
+            background-position: 50%;
+        }
+        .swiper-button-next ::after{
+            font-size: 5px;
+        }
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-family: swiper-icons;
+            font-size: 5px !important;
+            text-transform: none!important;
+            letter-spacing: 0;
+            text-transform: none;
+            font-variant: initial;
+            line-height: 1;
+}
+
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div id="img"></div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                hiddenClass: 'none',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
+</body>
+
+</html>
